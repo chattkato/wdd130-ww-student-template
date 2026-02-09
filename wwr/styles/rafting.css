@@ -1,0 +1,403 @@
+/* rafting.css - Updated for W04 Assignment */
+
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #1a5f7a;
+    --secondary-color: #57cc99;
+    --accent1-color: #22577a;
+    --accent2-color: #ffd166;
+    --accent3-color: #ff9a3c;
+    --dark-color: #1a2d3a;
+    --light-color: #f8f9fa;
+    --heading-font: "Trebuchet MS", "Georgia", serif;
+    --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+    background-color: var(--light-color);
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER WITH CSS GRID */
+header {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 2rem;
+}
+
+/* Header grid layout */
+.header-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+header img {
+    border-radius: 4px;
+    width: 120px;
+    height: auto;
+}
+
+/* NAVIGATION WITH CSS FLEXBOX */
+.nav-flex {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    transform: translateY(-2px);
+}
+
+nav a[href="about.html"] {
+    background-color: var(--accent2-color);
+    color: var(--dark-color);
+}
+
+/* Heading styles */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent2-color);
+    padding-bottom: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--accent3-color);
+    border-radius: 2px;
+}
+
+/* Content spacing */
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HERO SECTION with overlay */
+.hero {
+    position: relative;
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+    display: block;
+    width: 150%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    padding: 1rem 2rem;
+    text-align: left;
+    opacity: 0.9;
+    background-color: rgba(26, 95, 122, 0.85);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.hero-article {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-article img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0.5rem 1rem;
+    border-radius: 4px;
+    border: 2px solid var(--secondary-color);
+    object-fit: cover;
+}
+
+.hero-article p {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    color: var(--accent1-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* HISTORY SECTION with CSS Grid Layout */
+.history-section {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.history-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--accent1-color);
+}
+
+.history-content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--accent2-color);
+}
+
+/* ADVENTURES SECTION - SECOND SECTION WITH FIGURE ELEMENTS */
+main section:nth-of-type(2) {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adventures-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    font-size: 0.85rem;
+    font-family: var(--heading-font);
+}
+
+/* FOOTER STYLES with updated social media layout */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.socialmedia a:hover {
+    transform: translateY(-3px);
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .nav-flex {
+        justify-content: center;
+    }
+
+    .adventures-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .history-content img {
+        grid-row: 2;
+        justify-self: center;
+        max-width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero h1 {
+        position: static;
+        background-color: var(--primary-color);
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .hero-article {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+        background-color: white;
+    }
+
+    .adventures-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .adventures-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .hero-article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-article img {
+        margin-bottom: 1rem;
+        margin-left: 0;
+        float: none;
+    }
+}
