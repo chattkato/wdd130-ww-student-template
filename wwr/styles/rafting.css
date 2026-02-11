@@ -1042,3 +1042,10 @@ footer {
             flex-direction: column;
             text-align: center;
         }
+
+        .hero-article img {
+            margin-bottom: 1rem;
+            margin-left: 0;
+            float: none;
+        }
+    }
