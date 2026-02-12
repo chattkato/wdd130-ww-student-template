@@ -2,185 +2,166 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Contact White Water Rafting for inquiries, reservations, or feedback. Find our location, contact information, and team details.">
-    <meta name="author" content="Your Name">
-    <title>Contact Us - White Water Rafting Company</title>
+      content="Contact White Water Rafting LLC for reservations, questions, or feedback. View our address, phone numbers, map location, and send us a message.">
+    <meta name="author" content="Chatt Kato">
+    <title>Contact Us | White Water Rafting LLC</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="header-grid">
+            <img src="images/logo.png" alt="White Water Rafting Logo" width="120">
+            <nav>
+                <ul class="nav-flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="contact-container">
-            <!-- Hero Section -->
-            <div class="hero">
-                <img src="images/contact-hero.jpg" alt="Contact Us Hero Image">
-                <h1>Contact White Water Rafting</h1>
+        <section class="contact-hero">
+            <h1>Contact White Water Rafting LLC</h1>
+            <p>We’re here to help you plan your next adventure!</p>
+        </section>
+
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <div class="info-grid">
+                <div>
+                    <h3>Address</h3>
+                    <p>123 Riverfront Drive<br>
+                        Rapids City, RC 12345<br>
+                        United States</p>
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>Main: (555) 123-4567<br>
+                        Reservations: (555) 987-6543</p>
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>info@whitewaterrafting.com<br>
+                        bookings@whitewaterrafting.com</p>
+                </div>
             </div>
+        </section>
 
-            <!-- Company Information Section -->
-            <section class="company-info">
-                <h2>Get in Touch</h2>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <h3>Address</h3>
-                        <p>123 Riverfront Drive<br>
-                            Rapids City, RC 12345<br>
-                            United States</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p>Main Office: (555) 123-4567<br>
-                            Reservations: (555) 987-6543<br>
-                            Emergency: (555) 911-RAFT</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>General Inquiries: info@whitewaterrafting.com<br>
-                            Reservations: bookings@whitewaterrafting.com<br>
-                            Support: support@whitewaterrafting.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Business Hours</h3>
-                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
-                            Saturday: 9:00 AM - 5:00 PM<br>
-                            Sunday: 10:00 AM - 4:00 PM</p>
-                    </div>
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177858804427!2d-74.00601528459426!3d40.71277597933109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a315c6bb8d9%3A0x8c5b5b5b5b5b5b5b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1619999999999!5m2!1sen!2sus"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  title="Map showing White Water Rafting LLC location">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/guide1.jpg" alt="Sarah Johnson serving as Head River Guide">
+                    <figcaption><strong>Sarah Johnson</strong><br>Head Guide & Safety Officer
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/guide2.jpg" alt="Mike Chen managing rafting operations">
+                    <figcaption><strong>Mike Chen</strong><br>Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/guide3.jpg" alt="Emily Rodriguez assisting customers">
+                    <figcaption><strong>Emily Rodriguez</strong><br>Customer Relations Director
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+
+            <form action="https://formspree.io/f/your-form-endpoint" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </section>
 
-            <!-- Map Section -->
-            <section class="map-section">
-                <h2>Find Our Location</h2>
-                <div class="map-container">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177858804427!2d-74.00601528459426!3d40.71277597933109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a315c6bb8d9%3A0x8c5b5b5b5b5b5b5b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1619999999999!5m2!1sen!2sus"
-                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                      title="White Water Rafting Location">
-                    </iframe>
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </section>
 
-            <!-- Employee Profiles Section -->
-            <section class="employee-profiles">
-                <h2>Meet Our Team</h2>
-                <div class="employees">
-                    <figure class="employee">
-                        <img src="images/guide1.jpg" alt="Sarah Johnson - Head Guide">
-                        <figcaption>
-                            <strong>Sarah Johnson</strong><br>
-                            Head Guide & Safety Officer
-                        </figcaption>
-                    </figure>
-                    <figure class="employee">
-                        <img src="images/guide2.jpg" alt="Mike Chen - Operations Manager">
-                        <figcaption>
-                            <strong>Mike Chen</strong><br>
-                            Operations Manager
-                        </figcaption>
-                    </figure>
-                    <figure class="employee">
-                        <img src="images/guide3.jpg" alt="Emily Rodriguez - Customer Relations">
-                        <figcaption>
-                            <strong>Emily Rodriguez</strong><br>
-                            Customer Relations Director
-                        </figcaption>
-                    </figure>
+                <fieldset class="form-group">
+                    <legend>Purpose of Message *</legend>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
                 </div>
-            </section>
 
-            <!-- Contact Form Section -->
-            <section class="contact-form-section">
-                <h2>Send Us a Message</h2>
-                <form class="contact-form" action="https://formspree.io/f/your-form-endpoint"
-                  method="POST">
-                    <!-- Name Field -->
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" name="name" required
-                          placeholder="Enter your full name">
-                    </div>
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
 
-                    <!-- Email Field -->
-                    <div class="form-group">
-                        <label for="email">Your Email *</label>
-                        <input type="email" id="email" name="email" required
-                          placeholder="Enter your email address">
-                    </div>
+                <button type="submit" class="submit-btn">
+                    Send My Message
+                </button>
 
-                    <!-- Purpose Field (Radio Buttons) -->
-                    <div class="form-group">
-                        <label>Purpose of Message *</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="purpose" value="general" required>
-                                <span class="radio-custom"></span>
-                                General Inquiry
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="purpose" value="reservation">
-                                <span class="radio-custom"></span>
-                                Reservation Question
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="purpose" value="suggestion">
-                                <span class="radio-custom"></span>
-                                Website Suggestion
-                            </label>
-                        </div>
-                    </div>
+            </form>
+        </section>
 
-                    <!-- Message Field -->
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" rows="6" required
-                          placeholder="Please type your message here..."></textarea>
-                    </div>
-
-                    <!-- Newsletter Checkbox -->
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="newsletter" id="newsletter">
-                            <span class="checkbox-custom"></span>
-                            Please subscribe me to the monthly newsletter
-                        </label>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">Send Your Message</button>
-                    </div>
-                </form>
-            </section>
-        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 White Water Rafting Company | Your Name</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
+        <div class="footer-content">
+            <p>&copy; 2026 White Water Rafting LLC | Chatt Kato</p>
+
+            <nav class="socialmedia">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Visit our Facebook page">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.svg" alt="Visit our LinkedIn page">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Visit our Instagram page">
+                </a>
+            </nav>
         </div>
     </footer>
+
 </body>
 
 </html>
