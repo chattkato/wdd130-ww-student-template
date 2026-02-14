@@ -387,7 +387,6 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
-    /* ✅ ADDED - removes underline from social media links */
     display: inline-block;
     transition: transform 0.3s;
 }
