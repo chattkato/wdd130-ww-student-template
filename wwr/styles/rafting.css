@@ -281,9 +281,8 @@ figcaption {
    No duplicate body/header/footer
 ================================ */
 
-:root {
+.contact-page {
     --primary-color: #0f4c5c;
-    --white: #ffffff;
 }
 
 .contact-page main {
