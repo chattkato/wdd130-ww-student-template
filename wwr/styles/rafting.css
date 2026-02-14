@@ -136,10 +136,12 @@ article {
 }
 
 /* ================================
-   HERO
+   HERO - CORRECTED
 ================================ */
+
 .hero {
     position: relative;
+    /* ✅ Correct - already there */
     margin: 2rem 0;
     border-radius: 8px;
     overflow: hidden;
@@ -160,20 +162,21 @@ article {
     padding: 1rem 2rem;
     text-align: left;
     opacity: 0.9;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
 }
 
 .hero-article {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 20px;
+    right: 20px;
     width: 300px;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.95);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+
 }
 
 .hero-article img {
@@ -359,6 +362,7 @@ footer {
     color: var(--white);
     padding: 1.5rem;
     margin-top: 2rem;
+    border-radius: 8px 8px 0 0;
 }
 
 .footer-content {
@@ -366,6 +370,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
 }
 
 .socialmedia {
@@ -373,6 +385,19 @@ footer {
     gap: 1.5rem;
 }
 
+.socialmedia a {
+    text-decoration: none;
+    /* ✅ ADDED - removes underline from social media links */
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+}
+
 .socialmedia img {
     width: 32px;
+    height: 32px;
+    border-radius: 4px;
 }
