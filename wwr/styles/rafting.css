@@ -155,9 +155,8 @@ article {
     border-radius: 4px;
 }
 
-.hero-article {
+.hero article {
     position: absolute;
-    float: right;
     bottom: 20px;
     right: 20px;
     width: 300px;
@@ -167,7 +166,7 @@ article {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
-.hero-article img {
+.hero article img {
     float: right;
     width: 100px;
     height: 100px;
