@@ -133,6 +133,9 @@ article {
     margin: 2rem 0;
     border-radius: 8px;
     overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .hero img {
@@ -153,6 +156,8 @@ article {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 4px;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
 }
 
 .hero article {
@@ -383,4 +388,118 @@ footer {
     width: 32px;
     height: 32px;
     border-radius: 4px;
+}
+
+footer .social img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* ===============================
+   CALL TO ACTION
+=================================*/
+.cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--dark-color);
+}
+
+/* ===============================
+   HOME GRID SECTION
+=================================*/
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.grid-item h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    margin-bottom: 1rem;
+}
+
+/* ===============================
+   NEWSLETTER SECTION
+=================================*/
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--dark-color);
 }
