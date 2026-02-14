@@ -308,12 +308,6 @@ form {
     max-width: 600px;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
 input,
 textarea {
     padding: 0.6rem;
